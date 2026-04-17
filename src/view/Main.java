@@ -37,7 +37,7 @@ public class Main {
                         System.out.print("Preço: ");
                         double preco = Double.parseDouble(scanner.nextLine());
                         cardapio.add(new Produto(nome, desc, preco));
-                        System.out.println("model.Produto adicionado ao cardápio!");
+                        System.out.println("Produto adicionado ao cardápio!");
                         break;
 
                     case 2:
@@ -67,7 +67,7 @@ public class Main {
                                 }
                             } else if (escolha >= 0 && escolha < cardapio.size()) {
                                 novoPedido.adicionarProduto(cardapio.get(escolha));
-                                System.out.println("model.Produto adicionado! Total atual: R$ " + novoPedido.calcularTotal());
+                                System.out.println("Produto adicionado! Total atual: R$ " + novoPedido.calcularTotal());
                             }
                         }
                         break;
