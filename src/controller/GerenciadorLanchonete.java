@@ -12,7 +12,7 @@ public class GerenciadorLanchonete {
     public void registrarPedido(Pedido p) {
         p.finalizarPedido();
         historicoPedidos.add(p);
-        System.out.println("model.Pedido #" + p.getId() + " registrado e finalizado!");
+        System.out.println("Pedido #" + p.getId() + " registrado e finalizado!");
     }
 
     public void consultarFaturamentoPorData(LocalDate data) {
