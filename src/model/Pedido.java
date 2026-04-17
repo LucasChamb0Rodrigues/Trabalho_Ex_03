@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.time.LocalDate;
@@ -35,6 +37,6 @@ public class Pedido {
 
     @Override
     public String toString() {
-        return "Pedido #" + id + " | Itens: " + itens.size() + " | Total: R$ " + calcularTotal();
+        return "model.Pedido #" + id + " | Itens: " + itens.size() + " | Total: R$ " + calcularTotal();
     }
 }

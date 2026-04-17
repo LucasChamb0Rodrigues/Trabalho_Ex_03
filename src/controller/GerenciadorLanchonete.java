@@ -1,3 +1,7 @@
+package controller;
+
+import model.Pedido;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.time.LocalDate;
@@ -8,7 +12,7 @@ public class GerenciadorLanchonete {
     public void registrarPedido(Pedido p) {
         p.finalizarPedido();
         historicoPedidos.add(p);
-        System.out.println("Pedido #" + p.getId() + " registrado e finalizado!");
+        System.out.println("model.Pedido #" + p.getId() + " registrado e finalizado!");
     }
 
     public void consultarFaturamentoPorData(LocalDate data) {
